@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>OOP2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Book list</h1>
+    <div class="container">
+        <form>
+            <div class="formBox">
+                <input type="text" id="title" placeholder="Title" />
+            </div>
+            <div class="formBox">
+                <input type="text" id="author" placeholder="Author" />
+            </div>
+            <div class="formBox">
+                <input type="number" id="totalPages" placeholder="Total pages" />
+            </div>
+            <div class="formBox">
+                <input type="number" id="readPages" placeholder="Read Pages" />
+            </div>
+
+            <div class="formBox">
+                <div class="txt-center">
+                    <form>
+                        <div class="starRating">
+                            <input type="radio" id="star1" name="star" onclick="starRating(this.value)" value="5" class="radio-btn hide">
+                            <label for="star1">☆</label>
+                            <input type="radio" id="star2" name="star" onclick="starRating(this.value)" value="4" class="radio-btn hide">
+                            <label for="star2">☆</label>
+                            <input type="radio" id="star3" name="star" onclick="starRating(this.value)" value="3" class="radio-btn hide">
+                            <label for="star3">☆</label>
+                            <input type="radio" id="star4" name="star" onclick="starRating(this.value)" value="2" class="radio-btn hide">
+                            <label for="star4">☆</label>
+                            <input type="radio" id="star5" name="star" onclick="starRating(this.value)" value="1" class="radio-btn hide">
+                            <label for="star5">☆</label>
+                            <div class="clear"></div>
+                            <input type="hidden" id="result">
+                        </div>
+                    </form>
+                </div>
+                <div class="formBox">
+                    <button id="btn">Add</button>
+
+                </div>
+                <div class="formBox">
+                    <button id='deleteBooks'>Delete All Books From Table</button>
+                </div>
+            </div>
+
+
+
+
+
+        </form>
+    </div>
+
+
+    <div id="tableData"></div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

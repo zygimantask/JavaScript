@@ -1,0 +1,157 @@
+    /* BASE PAGE STYLESHEET*/
+    
+    html {
+        margin: 0;
+        background: linear-gradient(45deg, #49a09d, #5f2c82);
+        font-size: 16px;
+    }
+    
+    html,
+    body {
+        height: 100%;
+    }
+    
+    h1 {
+        color: white;
+        text-align: center;
+    }
+    
+    th,
+    td {
+        padding: 10px;
+        background-color: rgba(255, 255, 255, 0.2);
+        color: #fff;
+        border: 1px solid white;
+    }
+    
+    th {
+        text-align: center;
+        background-color: #55608f;
+    }
+    
+    table {
+        border: solid 1px black;
+        width: 600px;
+        border-collapse: collapse;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .container {
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+    }
+    
+    form {
+        color: white;
+        width: 500px;
+        padding: 10px 10px 10px 10px;
+    }
+    
+    #btn {
+        width: 100%;
+        background-color: green;
+        border-radius: 10px;
+        color: white;
+        font-weight: bold;
+        margin-top: 10px;
+    }
+    
+    #deleteBooks {
+        width: 100%;
+        background-color: orangered;
+        border-radius: 10px;
+        color: white;
+        font-weight: bold;
+        margin-top: 5px;
+    }
+    
+    .deleteRowButton {
+        border-radius: 10px;
+        background-color: orangered;
+        color: white;
+        font-weight: bold;
+    }
+    
+    .saveRowButton {
+        border-radius: 10px;
+        background-color: green;
+        color: white;
+        font-weight: bold;
+    }
+    
+    .editRowButton {
+        border-radius: 10px;
+        background-color: yellowgreen;
+        color: white;
+        font-weight: bold;
+    }
+    
+    .formBox {
+        margin-bottom: 10px;
+    }
+    
+    input {
+        border-radius: 10px;
+        text-align: center;
+        width: 100%;
+        font-weight: bold;
+        margin: -5px;
+    }
+    /* FIVE STAR RATINGS */
+    
+    .txt-center {
+        text-align: center;
+    }
+    
+    .hide {
+        display: none;
+    }
+    
+    .clear {
+        float: none;
+        clear: both;
+    }
+    
+    .starRating {
+        width: 100%;
+        unicode-bidi: bidi-override;
+        direction: rtl;
+        text-align: center;
+        position: relative;
+        margin: 0 auto;
+    }
+    
+    .starRating>label {
+        float: center;
+        display: inline;
+        padding: 0;
+        margin: 0;
+        position: relative;
+        width: 1.1em;
+        cursor: pointer;
+        color: white;
+        font-size: 30px;
+    }
+    
+    .starRating>label:hover,
+    .starRating>label:hover~label,
+    .starRating>input.radio-btn:checked~label {
+        color: transparent;
+    }
+    
+    .starRating>label:hover:before,
+    .starRating>label:hover~label:before,
+    .starRating>input.radio-btn:checked~label:before,
+    .starRating>input.radio-btn:checked~label:before {
+        content: "\2605";
+        position: absolute;
+        left: 0;
+        color: #FFD700;
+    }
